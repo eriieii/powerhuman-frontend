@@ -17,11 +17,11 @@
 
 @layer components {
     .card {
-        @apply bg-white relative p-6 rounded-[26px] flex flex-col gap-y-4 md: max-w-[500px]
+        @apply bg-white relative p-6 rounded-[26px] flex flex-col gap-y-4 md:max-w-[500px]
     }
 
     .input-field {
-        @apply placeholder: text-grey text-dark py-[11px] px-6 rounded-[100px] outline outline-[1.4px] outline-dark focus:outline-primary
+        @apply placeholder:text-grey text-dark py-[11px] px-6 rounded-[100px] outline outline-[1.4px] outline-dark focus:outline-primary
     }
 
     .btn {
@@ -51,7 +51,7 @@
     }
 
     .form-icon-search {
-        @apply sm: bg-[url('/assets/svgs/ic-search.svg')] bg-no-repeat bg-[center_right_24px]
+        @apply sm:bg-[url('/assets/svgs/ic-search.svg')] bg-no-repeat bg-[center_right_24px]
     }
 
     .form-icon-chevron_down {
@@ -59,11 +59,11 @@
     }
 
     .notification-dot {
-        @apply after: content-end after:bg-green-500 after:w-[6px] after:h-[6px] after:absolute after:z-30 after:rounded-full after:top-[12px] after:right-[15px]
+        @apply after:content-end after:bg-green-500 after:w-[6px] after:h-[6px] after:absolute after:z-30 after:rounded-full after:top-[12px] after:right-[15px]
     }
 
     .union-images img,
     .union-images span {
-        @apply outline outline-2 outline-white w-9 h-9 -ml-2 first: ml-0 rounded-full
+        @apply outline outline-2 outline-white w-9 h-9 -ml-2 first:ml-0 rounded-full
     }
 }
