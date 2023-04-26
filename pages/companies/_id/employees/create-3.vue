@@ -60,7 +60,7 @@
                     </div>
                 </div>
             </section>
-            <NuxtLink :to="{ name: 'employees-add-to-team' }" class="w-full btn btn-primary mt-[14px]">
+            <NuxtLink :to="{ name: 'companies-id-employees-add-to-team' }" class="w-full btn btn-primary mt-[14px]">
                 Continue
             </NuxtLink>
         </form>

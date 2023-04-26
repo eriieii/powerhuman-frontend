@@ -22,7 +22,7 @@
                 <label for="" class="text-grey">Phone Number</label>
                 <input type="number" class="input-field">
             </div>
-            <NuxtLink :to="{name : 'employees-create-3'}" class="w-full btn btn-primary mt-[14px]">
+            <NuxtLink :to="{name : 'companies-id-employees-create-3'}" class="w-full btn btn-primary mt-[14px]">
                 Continue
             </NuxtLink>
         </form>

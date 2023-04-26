@@ -39,7 +39,7 @@
                         </div>
                         <p class="text-grey">Empower company</p>
                     </div>
-                    <NuxtLink :to="{name: 'roles-create'}" class="btn btn-primary">New Role</NuxtLink>
+                    <NuxtLink :to="{name: 'companies-id-roles-create'}" class="btn btn-primary">New Role</NuxtLink>
                 </div>
             </div>
 
