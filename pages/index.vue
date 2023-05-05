@@ -5,11 +5,14 @@
                 <div class="form-group">
                     <label for="" class="text-grey">Companies</label>
                     <select 
-                        name="" 
+                        v-model="selectedCompany"
+                        name="companies" 
                         id=""
                         class="appearance-none input-field form-icon-chevron_down"
                         >
-                        <option value="" selected>Company Name</option>
+                        <option :value="company.id" v-for="company in companies.data.result.data">
+                            {{ company.name }}
+                        </option>
                     </select>
                     <a href="/companies/1" class="w-full btn btn-primary mt-[14px]">
                         Continue
@@ -21,6 +24,15 @@
 
 <script>
 export default{
-    middleware: 'auth'
+    middleware: 'auth',
+    data() {
+        return {
+            companies: [],
+            selectedCompany: ''
+        }
+    },
+    async fetch() {
+        this.companies = await this.$axios.get('/company')
+    }
 }
 </script>
